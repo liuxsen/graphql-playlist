@@ -7,7 +7,7 @@ const app = express();
 
 // connect to mlab database
 // make sure to replace my db string & creds with your own
-mongoose.connect('mongodb://127.0.0.1:27017');
+mongoose.connect('mongodb://127.0.0.1:27017/shop');
 mongoose.connection.once('open', () => {
   console.log('conneted to database');
 });
